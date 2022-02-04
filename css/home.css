@@ -1,0 +1,71 @@
+article {
+  text-align: center;
+  height: 265px;
+  width: 300px;
+  padding: 40px;
+  color: #252525;
+  background: url("elements/post.png") center no-repeat;
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas: "header header"
+                       "content content"
+                       "author more";
+}
+article:first-of-type {
+  margin-top: 20px;
+}
+  article h3 {
+    grid-area: header;
+    margin: 0;
+    margin-top: 5px;
+    overflow: hidden;
+    max-height: 45px;
+  }
+  article p {
+    grid-area: content;
+    max-height: 200px;
+    overflow: hidden;
+    margin: 0;
+  }
+  article .author {
+    grid-area: author;
+    font-size: 12px;
+    font-style: italic;
+  }
+  article .more {
+    grid-area: more;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+  }
+  article .more:hover {
+    cursor: pointer;
+  }
+.preview {
+  transform: scale(2);
+  position: relative;
+  z-index: 99;
+  /*transition: ease 0.4s;*/
+  top: 1vh;
+  font-size: 50%;
+  z-index: 10;
+}
+  .preview span {
+    font-size: 100%;
+  }
+  .preview h3 {
+    margin-top: 10px;
+  }
+  .preview::before {
+    content: '';
+    position: fixed;
+    width: 300px;
+    height: 265px;
+    top: 38px;
+    left: 42px;
+    /*box-shadow: -31px -29px 300px 200px; */
+    z-index: -1;
+  }

@@ -1,0 +1,114 @@
+.content {
+  transform: translateY(60px);
+}
+  .stats {
+    background: -webkit-linear-gradient(#37160a, #452214, #32180e, #37160a);
+    padding-bottom: 20px;
+    border-top: 2px solid #d6a141;
+    border-bottom: 2px solid #d6a141;
+    color: #A76B47;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px #181818eb;
+  }
+    .stats td {
+      padding: 10px;
+    }
+    .stats td:nth-of-type(odd) {
+      font-weight: bold;
+    }
+    .stats td:nth-of-type(even) {
+      word-break: break-word;
+      color: #825135;
+    }
+    hr {
+      border-color: #693421;
+      width: 93%;
+    }
+    .wrapper {
+      display: flex;      
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 25px;
+      padding: 8px 50px;
+    }
+      .wrapper a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #b88b40;
+      }
+      .wrapper a:hover i{
+        transform: translateY(-3px);
+        transition: ease 0.3s;
+      }
+
+.character-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background: url('elements/avatar-bg.png') no-repeat;
+  background-size: 100% 100%;
+  margin: 15px 5px;
+  padding: 0 21px;
+}
+  .avatar {
+    /*background: #ff000054;*/
+    width: 70px;
+    margin: 4px 0 0 0px;
+    height: 65px;
+  }
+  .character-stats {
+    width: 100%;
+    word-break: break-all;
+  }
+    .character-stats li {
+      list-style: none;
+      color: #8c6d3a;
+      font-size: 12px;
+    }
+    .character-stats ul {
+      padding-left: 10px;
+    }
+    .character-stats .empty {
+      padding-left: 23px;
+    }
+    .character-stats li:first-of-type {
+      color: #b88b40;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  .bug {
+    color: #845136;
+    z-index: 2;
+  }
+    .bug:hover {
+      color: #b88b40;
+      cursor: pointer;
+    }
+    .bug:hover+.notification {
+      display: block;
+    }
+    .notification {
+      width: 80px;
+      height: 30px;
+      right: -65px;
+      border-radius: 5px;
+      line-height: 30px;
+      text-align: center;
+      position: absolute;
+      background: #0e0e0e;
+      background: #0e0e0ed6;
+      color: #946c31;
+      border: 1px solid #946c31;
+      display: none;
+    }
+    .notification::after {
+      content: '';
+      width: 30px;
+      position: absolute;
+      border-bottom: 6px solid transparent;
+      left: -36px;
+      top: 8px;
+      border-top: 6px solid transparent;
+      border-right: 6px solid #946c31;
+    }

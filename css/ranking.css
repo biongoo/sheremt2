@@ -1,0 +1,133 @@
+
+.content {
+  background-color: #a0603e;
+  border-radius: 6px;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.6);
+}
+  .header-bg {
+    margin-top: -83px;
+  }
+.search-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  height: 40px;
+  border-radius: 14px;
+  margin: 30px 0;
+  overflow: hidden;
+  background: #c3845c;
+  background: #df926177;
+}
+  .search-bar {
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37160a;
+    width: 0;
+    transition: 0.5s;
+  }
+    .search-bar:placeholder {
+      color: #37160a;
+    }
+    .search-bar:focus,
+    .search-box:hover > .search-bar {
+      width: 210px;
+      transition: 0.5s;
+      padding: 0 10px;
+    }
+    .search-bar:focus + .search-btn,
+    .search-box:hover > .search-btn {
+      border-left: 4px solid #c08532;
+    }
+    .search-bar:focus+.search-btn .fas,
+    .search-box:hover>.search-btn .fas{
+      transform: rotate(90deg);
+    }
+    .search-btn {
+      float: right;
+      width: 40px;
+      height: 100%;
+      background: -webkit-radial-gradient(#452214, #37160a);
+      color: #c08532;
+      font-size: 1.5em;
+      line-height: 1.8em;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+    .search-btn .fas {
+      transform: rotate(0deg);
+      transition: .4s;
+    }
+
+table {
+  width: 100%;
+  margin-top: 80px;
+  color: #37160a;
+  overflow: hidden;
+  border-spacing: 0;
+}
+th {
+  background: -webkit-linear-gradient(#37160a, #452214, #32180e, #37160a);
+  color: #a4613e;
+  padding: 6px;
+}
+  th:nth-of-type(2) {
+    text-align: left;
+  }
+  th:nth-of-type(3),
+  td:last-of-type {
+    text-align: right;
+    padding-right: 16px;
+  }
+tr {
+  vertical-align: top;
+}
+:nth-of-type(odd).active {
+  background: #925334;
+}
+:nth-of-type(even).active {
+  background: #965736;
+}
+.labels:not(.active):hover {
+  background-color: #ad6b49;
+  cursor: pointer;
+}
+
+  td {
+    word-break: break-word;
+    padding: 6px;
+    max-width: 110px;
+  }
+  td:first-of-type {
+    font-weight: bold;
+  }
+  td:last-of-type {
+    text-align: right;
+  }
+  td.tb-pos {
+    text-align: center;
+  }
+
+.pagination {
+  top: 80px;
+}
+
+.hide {
+  display: none;
+  font-size: 14px;
+  /*background-color: #ad6b49;*/
+}
+[data-toggle="toggle"] {
+	display: none;
+}
+
+.village {
+    width:40px;
+    height:25px;
+    margin-top: -6px;
+}

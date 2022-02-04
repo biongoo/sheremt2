@@ -1,0 +1,39 @@
+.content {
+  border-top-left-radius: 0;
+}  
+  .settings-btn {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 4px;
+    margin: 20px;
+    padding-left: 20px;
+    color: #b88b40;
+    background: -webkit-linear-gradient(#37160a, #452214, #32180e, #37160a) !important;
+    border: 2px solid #d6a141;
+    box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.5);
+  }
+  .settings-btn:hover {
+    box-shadow: inset 0px -8px 29px -2px rgba(244, 162, 61, 0.6)
+  }
+    .settings-btn i {
+      margin-right: 10px;
+    }
+
+
+
+
+/*
+
+color: #a56b47;
+padding: 5px;
+text-decoration: none;
+top: -35px;
+position: relative;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+background: #31150a;
+
+border-top-left-radius: 0;
+
+*/
